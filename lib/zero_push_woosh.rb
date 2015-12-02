@@ -1,8 +1,8 @@
-require 'zero_push/version'
-require 'zero_push/client'
+require 'zero_push_woosh/version'
+require 'zero_push_woosh/client'
 require 'faraday'
 
-module ZeroPush
+module ZeroPushWoosh
   class << self
     extend Forwardable
     attr_accessor :auth_token, :auth_tokens, :config
@@ -26,7 +26,7 @@ module ZeroPush
       :delete_channel
 
     def client(auth_token = self.auth_token)
-      ZeroPush::Client.new(auth_token)
+      ZeroPushWoosh::Client.new(auth_token)
     end
 
     def config

@@ -1,7 +1,7 @@
-require 'zero_push/compatibility'
+require 'zero_push_woosh/compatibility'
 require 'faraday_middleware'
 
-module ZeroPush
+module ZeroPushWoosh
   class Client
     URL = 'https://api.zeropush.com'.freeze
 
@@ -30,7 +30,7 @@ module ZeroPush
       http.post('/notify', params)
     end
 
-    # Sends a notification to all of the devices registered with the ZeroPush backend
+    # Sends a notification to all of the devices registered with the ZeroPushWoosh backend
     #
     # @param params [Hash]
     #
@@ -62,7 +62,7 @@ module ZeroPush
       http.delete("/subscribe/#{channel}", device_token:device_token)
     end
 
-    # Registers a device token with the ZeroPush backend
+    # Registers a device token with the ZeroPushWoosh backend
     #
     # @param device_token
     #
@@ -75,7 +75,7 @@ module ZeroPush
     end
 
     # Unregisters a device token that has previously been registered with
-    # ZeroPush
+    # ZeroPushWoosh
     #
     # @param device_token
     #
@@ -163,7 +163,7 @@ module ZeroPush
     #
     # Example Request
     #
-    # ZeroPush.set_device(token, channel_list: 'player-1, game-256')
+    # ZeroPushWoosh.set_device(token, channel_list: 'player-1, game-256')
     #
     # Example Response
     # {
@@ -189,7 +189,7 @@ module ZeroPush
     #
     # Example Request
     #
-    # ZeroPush.update_device(token, channel_list: 'player-1, game-256')
+    # ZeroPushWoosh.update_device(token, channel_list: 'player-1, game-256')
     #
     # Example Response
     # {
@@ -262,7 +262,7 @@ module ZeroPush
 
     protected
       def http_config
-        @http_config ||= ZeroPush.config.dup
+        @http_config ||= ZeroPushWoosh.config.dup
       end
   end
 end

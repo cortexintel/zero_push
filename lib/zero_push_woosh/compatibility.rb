@@ -1,4 +1,4 @@
-module ZeroPush
+module ZeroPushWoosh
   module Compatibility
     def warn_on_deprecated_parameters(params)
       value = (params[:info] || params['info'] || params[:data] || params['data'])

@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in zero_push.gemspec
+# Specify your gem's dependencies in zero_push_woosh.gemspec
 gemspec

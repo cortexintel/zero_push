@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'zero_push/version'
+require 'zero_push_woosh/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "zero_push"
-  gem.version       = ZeroPush::VERSION
+  gem.name          = "zero_push_woosh"
+  gem.version       = ZeroPushWoosh::VERSION
   gem.authors       = ["Stefan Natchev", "Adam Duke"]
   gem.email         = ["stefan.natchev@gmail.com", "adam.v.duke@gmail.com"]
-  gem.summary       = %q{A gem for interacting with the ZeroPush API. (http://zeropush.com)}
-  gem.description   = %q{ZeroPush is a simple service for sending iOS push notifications. (http://zeropush.com)}
+  gem.summary       = %q{A gem for interacting with the ZeroPushWoosh API. (http://zeropush.com)}
+  gem.description   = %q{ZeroPushWoosh is a simple service for sending iOS push notifications. (http://zeropush.com)}
   gem.homepage      = "https://zeropush.com"
   gem.license       = 'MIT'
 
