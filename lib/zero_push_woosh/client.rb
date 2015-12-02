@@ -3,7 +3,7 @@ require 'faraday_middleware'
 
 module ZeroPushWoosh
   class Client
-    URL = 'https://api.zeropush.com'.freeze
+    URL = 'https://zeropush.pushwoosh.com'.freeze
 
     attr_accessor :auth_token
 
