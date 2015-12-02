@@ -1,6 +1,11 @@
-[![ZeroPushWoosh](https://raw.github.com/ZeroPushWoosh/zero_push_woosh/master/zeropush-header.png)](https://zeropush.com)
+# Important notice about this Gem
 
-[![Build Status](http://img.shields.io/travis/ZeroPushWoosh/zero_push_woosh.svg)](https://travis-ci.org/ZeroPushWoosh/zero_push_woosh) [![Code Climate](https://codeclimate.com/github/ZeroPushWoosh/zero_push_woosh/badges/gpa.svg)](https://codeclimate.com/github/ZeroPushWoosh/zero_push_woosh) [![Gem Version](http://img.shields.io/gem/v/zero_push_woosh.svg)](http://rubygems.org/gems/zero_push_woosh)
+[ZeroPush has been acquired by Twitter](https://zeropush.com/acquisition) and will be shutting their doors on January 31, 2016.  They have partnered with [PushWoosh](http://www.pushwoosh.com) to provide a ["code free" migration path](http://docs.pushwoosh.com/docs/zeropush-migration).  This gem offers a bridge between the former ZeroPush API and mirror PushWoosh API.  Please note there have been only two minor changes:
+
+1.  This gem and its files have been renamed from zero_push to zero_push_woosh to mark the bridge between the two providers
+2.  The ZeroPush API endpoint URL has been replaced by the PushWoosh bridge API endpoint url (i.e. https://zeropush.pushwoosh.com)
+
+Otherwise, all of the code remain the same as before.
 
 ## Installation
 
